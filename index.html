@@ -1,10 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Fabrizio Ferroni">
+    <meta name="description" content="Portfolio basado en HTML, CSS Y Javascript. Esta escrito en código HTML y CSS3 válido y limpio">
+    <meta name="keywords" content="portfolio website, portfolio html">
     <title>Fabrizio Ferroni - Developer</title>
     <link rel="shortcut icon" href="assets/img/faviconff.ico" type="image/x-icon">
 
@@ -16,7 +19,7 @@
     <link rel="stylesheet" href="assets/css/main.css">
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:400,500,700">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:600">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:600"> -->
 </head>
 
 <body>
@@ -38,7 +41,7 @@
                         <a class="nav-link active" aria-current="page" href="./">Inicio</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link" href="#">Acerca de</a>
+                        <a class="nav-link" href="./acerca-de-mi.html">Acerca de</a>
                     </li>
 
                     <li class="nav-item px-2">
@@ -85,7 +88,7 @@
             <div class="buttons">
                 <a href="#" class="outnone vp login-btn btn">Ver mis proyectos</a>
                 <button type="button" data-bs-toggle="modal" data-bs-target="#login" class="outnone download-btn btn"><i
-                        class="bi bi-download"></i> Descargar mi CV</button>
+                        class="pr-2 bi bi-download"></i> Descargar mi CV</button>
                 <!-- <a href="docs/CVFabrizioFerroni-2022.pdf" download="CV-Fabrizio-Ferroni.pdf" class="outnone download-btn btn"><i class="bi bi-download"></i> Descargar mi CV</a> -->
             </div>
         </div>
@@ -205,10 +208,22 @@
                                             placeholder="Ingrese su contraseña. ej: ********"
                                             autocomplete="ÑaoC0mplete">
                                     </div>
+
+                                    <div class="mt-4 col-md-12">
+                                        <label for="type"><i class="bi bi-briefcase"></i> Elige tu tipo de
+                                            usuario:</label>
+                                        <select name="type" class="outnone form-login form-select">
+                                            <option value="" selected disabled>Seleccione una opción</option>
+                                            <option value="1">Empleador</option>
+                                            <option value="2">Profesor</option>
+                                            <option value="3">Usuario</option>
+                                        </select>
+                                    </div>
                                 </div>
 
                                 <div class="lost-regi mt-4">
-                                    <button class="lostpass" type="button" data-bs-toggle="modal" data-bs-target="#login"><i class="pr-2 bi bi-person-bounding-box"></i> Iniciar
+                                    <button class="lostpass" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#login"><i class="pr-2 bi bi-person-bounding-box"></i> Iniciar
                                         Sesión</button>
                                 </div>
                         </div>
@@ -285,7 +300,7 @@
         <div class="card">
             <div class="row">
                 <div class="col-md-4">
-    <img src="assets/img/yo.jpg" class="mi-img" >
+                    <img src="assets/img/yo.jpg" class="mi-img" alt="Fabrizio Ferroni" title="Fabrizio Ferroni">
 
                 </div>
                 <div class="col-md-8 pl-6">
@@ -296,7 +311,7 @@
                             gusta todo tema que tenga que ver con la tecnología. Como diseñador FS A+J,
                             considero que un buen producto no solo brinda una solución sino que permite crear
                             una experiencia emocional en las personas que lo usan.
-            
+
                         </span>
                         <br>
                         <br>
@@ -308,7 +323,7 @@
                     </p>
 
                     <div class="mt-10">
-                        <a class="acd-btn mt-4">
+                        <a class="acd-btn mt-4" href="./acerca-de-mi.html">
                             Mas acerca de mi
                             <i class="pl-2 bi bi-arrow-right"></i>
                         </a>
@@ -317,6 +332,70 @@
             </div>
         </div>
     </section>
+    <!-- fin acerca de -->
+
+    <!-- proyectos -->
+    <section id="proyectos">
+        <div class="proyectos container-fluid">
+            <div class="proyectos-header">
+                <p class="proyectos-title">Proyectos</p>
+            </div>
+            <div class="proyectos-body">
+                <!-- <div class="row"> -->
+                    <!-- <div class="col-md-12"> -->
+                        <img src="assets/img/proyectos.png" alt="proyectos ff dev" class="proyectos-img">
+                        <img src="assets/img/proyectos.png" alt="proyectos ff dev" class="proyectos-img">
+                        <img src="assets/img/proyectos.png" alt="proyectos ff dev" class="proyectos-img">
+                        <img src="assets/img/proyectos.png" alt="proyectos ff dev" class="proyectos-img">
+                        
+                    <!-- </div> -->
+                    <!-- </div> -->
+                </div>
+                <a href="https://github.com/FabrizioFerroni" target="_blank" class="outnone btn github-btn">
+                    Ver mas en github 
+                    <i class="pl-2 bi bi-arrow-right"></i>
+                </a>
+        </div>
+    </section>
+    <!-- fin proyectos -->
+
+    <!-- footer -->
+    <footer>
+        <div class="footers container">
+           <div class="row">
+               <div class="col-md-3">
+                    <p class="footer-title">Fabrizio DEV</p>
+               </div>
+               <div class="col-md-3">
+
+                <div class="footer-enlace">
+                    <a href="./" class="footer-enlace-a">Inicio</a>
+                    <a href="./acerca-de-mi.html" class="footer-enlace-a">Acerca de mi</a>
+                    <a href="" class="footer-enlace-a">Proyectos</a>
+                </div>
+               </div>
+               <div class="col-md-3">
+                <div class="footer-enlace">
+                    <a href="" class="footer-enlace-a">Contactame</a>
+                    <a href="" class="footer-enlace-a" data-bs-toggle="modal" data-bs-target="#login">Iniciar Sesion</a>
+                    <a href="" class="footer-enlace-a">Subscribete</a>
+                </div>
+               </div>
+               <div class="col-md-3">
+                    <p class="footer-social">Social</p>
+                        <a href="https://github.com/FabrizioFerroni" target="_blank"><img src="assets/img/git_1.png" alt="" class="footer-img"></a>
+                        <a href="" target="_blank"><img src="assets/img/insta2_1.png" alt="" class="footer-img-2"></a>
+                        <a href="" target="_blank"><img src="assets/img/linkedin.png" alt="" class="footer-img"></a>
+               </div>
+           </div>
+        </div>
+        <div class="footer-copy">
+            <p class="footer-copy-p">© 2021 Fabrizio DEV</p>
+        </div>
+    </footer>
+    <!-- fin footer -->
+
+
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
@@ -330,31 +409,5 @@
 
 
 
-<!-- <div class="acerca-de">
-    <!-- <img src="assets/img/yo.jpg" class="img-acd"> --
-    <div class="adm-3">
-        <p class="p-title">Acerca de mi</p>
-        <p class="p-parrafo">
-            <span class="sp-1">Hola! mi nombre es Fabrizio y tengo gran afinidad hacía el trabajo
-                colaborativo, me
-                gusta todo tema que tenga que ver con la tecnología. Como diseñador FS A+J,
-                considero que un buen producto no solo brinda una solución sino que permite crear
-                una experiencia emocional en las personas que lo usan.
 
-            </span>
-            <br>
-            <br>
-            <span class="sp-2">
-                En mi proceso creativo utilizo herramientas como Figma, VS Code, e otros proyectos
-                que me ayudan a poder ver la necesidad de la gente y poder desarrollar otros
-                proyectos.
-            </span>
-        </p>
-    </div>
-    <div class="adm-4">
-        <a class="a-adm">
-            Mas acerca de mi
-            <i class="bi bi-arrow-right"></i>
-        </a>
-    </div>
-</div> -->
+
