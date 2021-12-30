@@ -507,6 +507,11 @@ footer{
     line-height: 40px;
 }
 
+.card-1 svg, .card-2 svg, .card-3 svg, .card-4 svg, .card-5 svg, .card-6 svg{
+    width: 50px !important;
+    height: 50px !important;
+}
+
 
 
 .mb-30{
