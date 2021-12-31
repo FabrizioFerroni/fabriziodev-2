@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Fabrizio Ferroni">
-    <meta name="description" content="Portfolio basado en HTML, CSS Y Javascript. Esta escrito en código HTML y CSS3 válido y limpio">
+    <meta name="description"
+        content="Portfolio basado en HTML, CSS Y Javascript. Esta escrito en código HTML y CSS3 válido y limpio">
     <meta name="keywords" content="portfolio website, portfolio html">
     <title>Fabrizio Ferroni - Developer</title>
     <link rel="shortcut icon" href="assets/img/faviconff.ico" type="image/x-icon">
@@ -21,6 +22,7 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=DM+Sans:400,500,700">
     <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:600"> -->
+
 </head>
 
 <body>
@@ -39,18 +41,19 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0 ">
                     <li class="nav-item px-2">
-                        <a class="nav-link active" aria-current="page" href="./">Inicio</a>
+                        <a class="nav-link" aria-current="page" href="./">Inicio</a>
                     </li>
                     <li class="nav-item px-2">
-                        <a class="nav-link" href="./acerca-de-mi.html">Acerca de</a>
-                    </li>
-
-                    <li class="nav-item px-2">
-                        <a class="nav-link" href="./proyectos.html" tabindex="-1" aria-disabled="true">Proyectos</a>
+                        <a class="nav-link " href="./acerca-de-mi.html">Acerca de</a>
                     </li>
 
                     <li class="nav-item px-2">
-                        <a class="nav-link" href="./contactame.html" tabindex="-1" aria-disabled="true">Contactame</a>
+                        <a class="nav-link " href="./proyectos.html" tabindex="-1"
+                            aria-disabled="true">Proyectos</a>
+                    </li>
+
+                    <li class="nav-item px-2">
+                        <a class="nav-link active" href="./contactame.html" tabindex="-1" aria-disabled="true">Contactame</a>
                     </li>
 
                     <li class="nav-item px-2">
@@ -76,24 +79,8 @@
     </nav>
     <!-- fin nav -->
 
-    <!-- header -->
-    <section>
-        <div class="header">
-            <p class="p1">
-                <span class="sp1">Soy</span>
-                <span class="sp2">Fabrizio <br> Ferroni.</span>
-                <br>
-                <span class="sp3">Full Stack Angular+Java</span>
-            </p>
-            <p class="p2">Este es mi portafolio web!</p>
-            <div class="buttons">
-                <a href="./proyectos.html" class="outnone vp login-btn btn">Ver mis proyectos</a>
-                <button type="button" data-bs-toggle="modal" data-bs-target="#login" class="outnone download-btn btn"><i
-                        class="pr-2 bi bi-download"></i> Descargar mi CV</button>
-                <!-- <a href="docs/CVFabrizioFerroni-2022.pdf" download="CV-Fabrizio-Ferroni.pdf" class="outnone download-btn btn"><i class="bi bi-download"></i> Descargar mi CV</a> -->
-            </div>
-        </div>
-
+    <!-- modal -->
+    <section id="modal">
         <!-- Modal -->
         <div class="modal fade" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -102,9 +89,10 @@
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel"><i class="pr-2 bi bi-person-bounding-box"></i>
                             Iniciar Sesión</h5>
-                        <button type="button" class="outnone btn-close" data-bs-dismiss="modal" aria-label="Close"><i
-                                class="bi bi-x-lg"></i></button>
-                        <!-- <button type="button" class="outnone btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                        <!-- <button type="button" class="outnone btn-close" data-bs-dismiss="modal" aria-label="Close"><i
+                        class="bi bi-x-lg"></i></button> -->
+                        <button type="button" class="outnone btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <div class="container-fluid">
@@ -168,9 +156,10 @@
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel"><i class="pr-2 bi bi-person-plus"></i>
                             Registrarse</h5>
-                        <button type="button" class="outnone btn-close" data-bs-dismiss="modal" aria-label="Close"><i
-                                class="bi bi-x-lg"></i></button>
-                        <!-- <button type="button" class="outnone btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                        <!-- <button type="button" class="outnone btn-close" data-bs-dismiss="modal" aria-label="Close"><i
+                        class="bi bi-x-lg"></i></button> -->
+                        <button type="button" class="outnone btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <div class="container-fluid">
@@ -254,9 +243,10 @@
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel"><i class="pr-2 bi bi-exclamation-circle"></i>
                             Olvide mi contraseña</h5>
-                        <button type="button" class="outnone btn-close" data-bs-dismiss="modal" aria-label="Close"><i
-                                class="bi bi-x-lg"></i></button>
-                        <!-- <button type="button" class="outnone btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                        <!-- <button type="button" class="outnone btn-close" data-bs-dismiss="modal" aria-label="Close"><i
+                        class="bi bi-x-lg"></i></button> -->
+                        <button type="button" class="outnone btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <div class="container-fluid">
@@ -292,98 +282,69 @@
                 </div>
             </div>
         </div>
-
+        <!-- fin modal -->
     </section>
-    <!-- fin header -->
 
-    <!-- acerca de -->
-    <section id="acerca-de">
-        <div class="card acd-card">
+<section id="contactame">
+    <div class="container contact">
+        <div class="contact-header">
+            <p class="p-title-contact">¡Hablemos!</p>
+            <p class="p-subtitle-contact">Si estás interesado en mi trabajo o tienes alguna inquietud, no dudes en escribirme!</p>
             <div class="row">
-                <div class="col-md-4">
-                    <img src="assets/img/yo.jpg" class="mi-img" alt="Fabrizio Ferroni" title="Fabrizio Ferroni">
+                <div class="col-md-12">
+                    <div class="card card-contact">
+                        <form action="#" method="post">
+                            <label for="name" class="label-contact">Tu nombre</label>
+                            <input type="text" name="name" class="form-control input-contact outnone" placeholder="Nombre">
 
-                </div>
-                <div class="col-md-8 pl-6">
-                    <p class="p-title">Acerca de mi</p>
-                    <p class="p-parrafo">
-                        <span class="sp-1">Hola! mi nombre es Fabrizio y tengo gran afinidad hacía el trabajo
-                            colaborativo, me
-                            gusta todo tema que tenga que ver con la tecnología. Como diseñador FS A+J,
-                            considero que un buen producto no solo brinda una solución sino que permite crear
-                            una experiencia emocional en las personas que lo usan.
+                            <label for="email" class="label-contact">Tu correo electrónico</label>
+                            <input type="email" name="email" class="form-control input-contact outnone" placeholder="ejemplo@hotmail.com">
 
-                        </span>
-                        <br>
-                        <br>
-                        <span class="sp-2">
-                            En mi proceso creativo utilizo herramientas como Figma, VS Code, e otros proyectos
-                            que me ayudan a poder ver la necesidad de la gente y poder desarrollar otros
-                            proyectos.
-                        </span>
-                    </p>
+                            <label for="msj" class="label-contact">Tu mensaje</label>
+                            <textarea name="msj" class="form-control text-contact outnone" cols="30" rows="10" placeholder="Hola..."></textarea>
 
-                    <div class="mt-10">
-                        <a class="acd-btn mt-4" href="./acerca-de-mi.html">
-                            Mas acerca de mi
-                            <i class="pl-2 bi bi-arrow-right"></i>
-                        </a>
+                            <button type="submit" class="button-contact">Enviar</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- fin acerca de -->
+    </div>
+</section>
 
-    <!-- proyectos -->
-    <section id="proyectos">
-        <div class="proyectos container-fluid">
-            <div class="proyectos-header">
-                <p class="proyectos-title">Proyectos</p>
-            </div>
-            <div class="proyectos-body">
-                        <img src="assets/img/proyectos.png" alt="proyectos ff dev" class="proyectos-img">
-                        <img src="assets/img/proyectos.png" alt="proyectos ff dev" class="proyectos-img">
-                        <img src="assets/img/proyectos.png" alt="proyectos ff dev" class="proyectos-img">
-                        <img src="assets/img/proyectos.png" alt="proyectos ff dev" class="proyectos-img">
-                </div>
-                <a href="https://github.com/FabrizioFerroni" target="_blank" class="outnone btn github-btn">
-                    Ver mas en github 
-                    <i class="pl-2 bi bi-arrow-right"></i>
-                </a>
-        </div>
-    </section>
-    <!-- fin proyectos -->
+
 
     <!-- footer -->
-    <footer>
+    <footer class="footer mt-auto pt-3">
         <div class="footers container">
-           <div class="row">
-               <div class="col-md-3">
+            <div class="row">
+                <div class="col-md-3">
                     <p class="footer-title">Fabrizio DEV</p>
-               </div>
-               <div class="col-md-3">
+                </div>
+                <div class="col-md-3">
 
-                <div class="footer-enlace">
-                    <a href="./" class="footer-enlace-a active">Inicio</a>
-                    <a href="./acerca-de-mi.html" class="footer-enlace-a">Acerca de mi</a>
-                    <a href="./proyectos.html" class="footer-enlace-a">Proyectos</a>
+                    <div class="footer-enlace">
+                        <a href="./" class="footer-enlace-a">Inicio</a>
+                        <a href="./acerca-de-mi.html" class="footer-enlace-a ">Acerca de mi</a>
+                        <a href="./proyectos.html" class="footer-enlace-a">Proyectos</a>
+                    </div>
                 </div>
-               </div>
-               <div class="col-md-3">
-                <div class="footer-enlace">
-                    <a href="./contactame.html" class="footer-enlace-a">Contactame</a>
-                    <a  class="footer-enlace-a" data-bs-toggle="modal" data-bs-target="#login">Iniciar Sesion</a>
-                    <a href="" class="footer-enlace-a">Subscribete</a>
+                <div class="col-md-3">
+                    <div class="footer-enlace">
+                        <a href="./contactame.html" class="footer-enlace-a active">Contactame</a>
+                        <a href="" class="footer-enlace-a" data-bs-toggle="modal" data-bs-target="#login">Iniciar
+                            Sesion</a>
+                        <a href="" class="footer-enlace-a">Subscribete</a>
+                    </div>
                 </div>
-               </div>
-               <div class="col-md-3">
+                <div class="col-md-3">
                     <p class="footer-social">Social</p>
-                        <a href="https://github.com/FabrizioFerroni" target="_blank"><img src="assets/img/git_1.png" alt="" class="footer-img"></a>
-                        <a href="" target="_blank"><img src="assets/img/insta2_1.png" alt="" class="footer-img-2"></a>
-                        <a href="" target="_blank"><img src="assets/img/linkedin.png" alt="" class="footer-img"></a>
-               </div>
-           </div>
+                    <a href="https://github.com/FabrizioFerroni" target="_blank"><img src="assets/img/git_1.png" alt=""
+                            class="footer-img"></a>
+                    <a href="" target="_blank"><img src="assets/img/insta2_1.png" alt="" class="footer-img-2"></a>
+                    <a href="" target="_blank"><img src="assets/img/linkedin.png" alt="" class="footer-img"></a>
+                </div>
+            </div>
         </div>
         <div class="footer-copy">
             <p class="footer-copy-p">© 2021 Fabrizio DEV</p>
@@ -391,19 +352,14 @@
     </footer>
     <!-- fin footer -->
 
-
-
+    <!-- scripts -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
+    <!-- fin scripts -->
 </body>
 
 </html>
-
-
-
-
-
