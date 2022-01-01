@@ -79,205 +79,255 @@
     <!-- fin nav -->
 
     <!-- modal -->
-
-    <!-- Modal -->
-    <div class="modal fade" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered ">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel"><i class="pr-2 bi bi-person-bounding-box"></i>
-                        Iniciar Sesión</h5>
-                    <!-- <button type="button" class="outnone btn-close" data-bs-dismiss="modal" aria-label="Close"><i
-                            class="bi bi-x-lg"></i></button> -->
-                    <button type="button" class="outnone btn-close btn-close-white" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <form action="#" method="post">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <label for="user"><i class="bi bi-person"></i> Usuario:</label>
-                                    <input type="text" name="user" class="form-login outnone form-control"
-                                        placeholder="Ingrese su usuario. ej: fperez" autocomplete="ÑaoC0mplete">
-                                </div>
-                                <div class="mt-4 col-md-12">
-                                    <label for="password"><i class="bi bi-key"></i> Contraseña:</label>
-                                    <input type="password" name="password" class="form-login outnone form-control"
-                                        placeholder="Ingrese su contraseña. ej: ********" autocomplete="ÑaoC0mplete">
-                                </div>
-                            </div>
-                            <div class="mt-2">
-                                <div class="form-check">
-                                    <input class="outnone form-check-input" type="checkbox" value=""
-                                        id="flexCheckDefault">
-                                    <label class="form-check-label" for="flexCheckDefault">
-                                        Recordarme
-                                    </label>
-                                </div>
-                            </div>
-
-                            <div class="lost-regi mt-2">
-                                <button class="lostpass" type="button" data-bs-toggle="modal"
-                                    data-bs-target="#lostpass"><i class="pr-2 bi bi-exclamation-circle"></i> Olvide
-                                    mi
-                                    contraseña</button>
-                                <button class="register" type="button" data-bs-toggle="modal"
-                                    data-bs-target="#register"><i class="pr-2 bi bi-person-plus"></i>
-                                    Registrarse</button>
-                            </div>
+    <section id="modal">
+        <!-- Modal -->
+        <div class="modal fade" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"><i class="pr-2 bi bi-person-bounding-box"></i>
+                            Iniciar Sesión</h5>
+                        <!-- <button type="button" class="outnone btn-close" data-bs-dismiss="modal" aria-label="Close"><i
+                        class="bi bi-x-lg"></i></button> -->
+                        <button type="button" class="outnone btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <div class="d-flex me-auto">
-                        <button type="button" class="mr-auto outnone btn btn-secondary" data-bs-dismiss="modal"><i
-                                class="pr-2  bi bi-x-lg"></i> Cancelar</button>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form action="#" method="post">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label for="user"><i class="bi bi-person-circle"></i> Usuario:</label>
+                                        <input type="text" name="user" class="form-login outnone form-control"
+                                            placeholder="Ingrese su usuario. ej: fperez" autocomplete="ÑaoC0mplete">
+                                    </div>
+                                    <div class="mt-4 col-md-12">
+                                        <label for="password"><i class="bi bi-key"></i> Contraseña:</label>
+                                        <input type="password" name="password" class="form-login outnone form-control"
+                                            placeholder="Ingrese su contraseña. ej: ********"
+                                            autocomplete="ÑaoC0mplete">
+                                    </div>
+                                </div>
+                                <div class="mt-2">
+                                    <div class="form-check">
+                                        <input class="outnone form-check-input" type="checkbox" value=""
+                                            id="flexCheckDefault">
+                                        <label class="form-check-label" for="flexCheckDefault">
+                                            Recordarme
+                                        </label>
+                                    </div>
+                                </div>
+
+                                <div class="lost-regi mt-2">
+                                    <button class="lostpass" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#lostpass"><i class="pr-2 bi bi-exclamation-circle"></i> Olvide
+                                        mi
+                                        contraseña</button>
+                                    <button class="register" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#register"><i class="pr-2 bi bi-person-plus"></i>
+                                        Registrarse</button>
+                                </div>
+                        </div>
                     </div>
-                    <div class="d-flex">
-                        <button type="submit" class="outnone btn login-btn"><i
-                                class="pr-2 bi bi-box-arrow-in-right"></i> Iniciar Sesión</button>
-                    </div>
-                    </form>
+                    <div class="modal-footer">
+                        <div class="d-flex me-auto">
+                            <button type="button" class="mr-auto outnone btn btn-secondary" data-bs-dismiss="modal"><i
+                                    class="pr-2  bi bi-x-lg"></i> Cancelar</button>
+                        </div>
+                        <div class="d-flex">
+                            <button type="submit" class="outnone btn login-btn"><i
+                                    class="pr-2 bi bi-box-arrow-in-right"></i> Iniciar Sesión</button>
+                        </div>
+                        </form>
 
 
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="register" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered ">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel"><i class="pr-2 bi bi-person-plus"></i>
-                        Registrarse</h5>
-                    <!-- <button type="button" class="outnone btn-close" data-bs-dismiss="modal" aria-label="Close"><i
-                            class="bi bi-x-lg"></i></button> -->
-                    <button type="button" class="outnone btn-close btn-close-white" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <form action="#" method="post">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <label for="name"><i class="bi bi-person"></i> Nombre:</label>
-                                    <input type="text" name="name" class="form-login outnone form-control"
-                                        placeholder="Ingrese su nombre. ej: Facundo" autocomplete="ÑaoC0mplete">
-                                </div>
-                                <div class="mt-4 col-md-12">
-                                    <label for="lastname"><i class="bi bi-person"></i> Apellido:</label>
-                                    <input type="text" name="lastname" class="form-login outnone form-control"
-                                        placeholder="Ingrese su apellido. ej: Perez" autocomplete="ÑaoC0mplete">
-                                </div>
-                                <div class="mt-4 col-md-12">
-                                    <label for="email"><i class="bi bi-person"></i> Correo Electronico:</label>
-                                    <input type="email" name="email" class="form-login outnone form-control"
-                                        placeholder="Ingrese su email. ej: fperez@gmail.com" autocomplete="ÑaoC0mplete">
-                                </div>
-                                <div class="mt-4 col-md-12">
-                                    <label for="user"><i class="bi bi-person"></i> Usuario:</label>
-                                    <input type="text" name="user" class="form-login outnone form-control"
-                                        placeholder="Ingrese su usuario. ej: fperez" autocomplete="ÑaoC0mplete">
-                                </div>
-                                <div class="mt-4 col-md-12">
-                                    <label for="password"><i class="bi bi-key"></i> Contraseña:</label>
-                                    <input type="password" name="password" class="form-login outnone form-control"
-                                        placeholder="Ingrese su contraseña. ej: ********" autocomplete="ÑaoC0mplete">
-                                </div>
-                                <div class="mt-4 col-md-12">
-                                    <label for="password"><i class="bi bi-key"></i> Repita la contraseña:</label>
-                                    <input type="password" name="password" class="form-login outnone form-control"
-                                        placeholder="Ingrese su contraseña. ej: ********" autocomplete="ÑaoC0mplete">
-                                </div>
-
-                                <div class="mt-4 col-md-12">
-                                    <label for="type"><i class="bi bi-briefcase"></i> Elige tu tipo de
-                                        usuario:</label>
-                                    <select name="type" class="outnone form-login form-select">
-                                        <option value="" selected disabled>Seleccione una opción</option>
-                                        <option value="1">Empleador</option>
-                                        <option value="2">Profesor</option>
-                                        <option value="3">Usuario</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <div class="lost-regi mt-4">
-                                <button class="lostpass" type="button" data-bs-toggle="modal" data-bs-target="#login"><i
-                                        class="pr-2 bi bi-person-bounding-box"></i> Iniciar
-                                    Sesión</button>
-                            </div>
+        <!-- Modal -->
+        <div class="modal fade" id="register" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"><i class="pr-2 bi bi-person-plus"></i>
+                            Registrarse</h5>
+                        <!-- <button type="button" class="outnone btn-close" data-bs-dismiss="modal" aria-label="Close"><i
+                        class="bi bi-x-lg"></i></button> -->
+                        <button type="button" class="outnone btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <div class="d-flex me-auto">
-                        <button type="button" class="mr-auto outnone btn btn-secondary" data-bs-dismiss="modal"><i
-                                class="pr-2  bi bi-x-lg"></i> Cancelar</button>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form action="#" method="post">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label for="name"><i class="bi bi-person"></i> Nombre:</label>
+                                        <input type="text" name="name" class="form-login outnone form-control"
+                                            placeholder="Ingrese su nombre. ej: Facundo" autocomplete="ÑaoC0mplete">
+                                    </div>
+                                    <div class="mt-4 col-md-12">
+                                        <label for="lastname"><i class="bi bi-person"></i> Apellido:</label>
+                                        <input type="text" name="lastname" class="form-login outnone form-control"
+                                            placeholder="Ingrese su apellido. ej: Perez" autocomplete="ÑaoC0mplete">
+                                    </div>
+                                    <div class="mt-4 col-md-12">
+                                        <label for="email"><i class="bi bi-at"></i> Correo Electronico:</label>
+                                        <input type="email" name="email" class="form-login outnone form-control"
+                                            placeholder="Ingrese su email. ej: fperez@gmail.com"
+                                            autocomplete="ÑaoC0mplete">
+                                    </div>
+                                    <div class="mt-4 col-md-12">
+                                        <label for="user"><i class="bi bi-person-circle"></i> Usuario:</label>
+                                        <input type="text" name="user" class="form-login outnone form-control"
+                                            placeholder="Ingrese su usuario. ej: fperez" autocomplete="ÑaoC0mplete">
+                                    </div>
+                                    <div class="mt-4 col-md-12">
+                                        <label for="password"><i class="bi bi-key"></i> Contraseña:</label>
+                                        <input type="password" name="password" class="form-login outnone form-control"
+                                            placeholder="Ingrese su contraseña. ej: ********"
+                                            autocomplete="ÑaoC0mplete">
+                                    </div>
+                                    <div class="mt-4 col-md-12">
+                                        <label for="password"><i class="bi bi-key"></i> Repita la contraseña:</label>
+                                        <input type="password" name="password" class="form-login outnone form-control"
+                                            placeholder="Ingrese su contraseña. ej: ********"
+                                            autocomplete="ÑaoC0mplete">
+                                    </div>
+
+                                    <div class="mt-4 col-md-12">
+                                        <label for="type"><i class="bi bi-briefcase"></i> Elige tu tipo de
+                                            usuario:</label>
+                                        <select name="type" class="outnone form-login form-select">
+                                            <option value="" selected disabled>Seleccione una opción</option>
+                                            <option value="1">Empleador</option>
+                                            <option value="2">Profesor</option>
+                                            <option value="3">Usuario</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="lost-regi mt-4">
+                                    <button class="lostpass" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#login"><i class="pr-2 bi bi-person-bounding-box"></i> Iniciar
+                                        Sesión</button>
+                                </div>
+                        </div>
                     </div>
-                    <div class="d-flex">
-                        <button type="submit" class="outnone btn login-btn"><i class="pr-2 bi bi-person-plus"></i>
-                            Registrarse</button>
-                    </div>
-                    </form>
+                    <div class="modal-footer">
+                        <div class="d-flex me-auto">
+                            <button type="button" class="mr-auto outnone btn btn-secondary" data-bs-dismiss="modal"><i
+                                    class="pr-2  bi bi-x-lg"></i> Cancelar</button>
+                        </div>
+                        <div class="d-flex">
+                            <button type="submit" class="outnone btn login-btn"><i class="pr-2 bi bi-person-plus"></i>
+                                Registrarse</button>
+                        </div>
+                        </form>
 
 
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="lostpass" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-        aria-labelledby="staticBackdropLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered ">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel"><i class="pr-2 bi bi-exclamation-circle"></i>
-                        Olvide mi contraseña</h5>
-                    <!-- <button type="button" class="outnone btn-close" data-bs-dismiss="modal" aria-label="Close"><i
-                            class="bi bi-x-lg"></i></button> -->
-                    <button type="button" class="outnone btn-close btn-close-white" data-bs-dismiss="modal"
-                        aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div class="container-fluid">
-                        <form action="#" method="post">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <label for="email"><i class="bi bi-person"></i> Correo Electronico:</label>
-                                    <input type="email" name="email" class="form-login outnone form-control"
-                                        placeholder="Ingrese su email con cual se registro. ej: fperez@gmail.com"
-                                        autocomplete="ÑaoC0mplete">
+        <!-- Modal -->
+        <div class="modal fade" id="lostpass" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"><i class="pr-2 bi bi-exclamation-circle"></i>
+                            Olvide mi contraseña</h5>
+                        <!-- <button type="button" class="outnone btn-close" data-bs-dismiss="modal" aria-label="Close"><i
+                        class="bi bi-x-lg"></i></button> -->
+                        <button type="button" class="outnone btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form action="#" method="post">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <label for="email"><i class="bi bi-at"></i> Correo Electronico:</label>
+                                        <input type="email" name="email" class="form-login outnone form-control"
+                                            placeholder="Ingrese su email con cual se registro. ej: fperez@gmail.com"
+                                            autocomplete="ÑaoC0mplete">
+                                    </div>
+
                                 </div>
 
-                            </div>
-
-                            <div class="lost-regi mt-2">
-                                <button class="lostpass" type="button" data-bs-toggle="modal" data-bs-target="#login"><i
-                                        class="pr-2 bi bi-person-bounding-box"></i>
-                                    Iniciar Sesión</button>
-                            </div>
+                                <div class="lost-regi mt-2">
+                                    <button class="lostpass" type="button" data-bs-toggle="modal"
+                                        data-bs-target="#login"><i class="pr-2 bi bi-person-bounding-box"></i>
+                                        Iniciar Sesión</button>
+                                </div>
+                        </div>
                     </div>
-                </div>
-                <div class="modal-footer">
-                    <div class="d-flex me-auto">
-                        <button type="button" class="mr-auto outnone btn btn-secondary" data-bs-dismiss="modal"><i
-                                class="pr-2  bi bi-x-lg"></i> Cancelar</button>
+                    <div class="modal-footer">
+                        <div class="d-flex me-auto">
+                            <button type="button" class="mr-auto outnone btn btn-secondary" data-bs-dismiss="modal"><i
+                                    class="pr-2  bi bi-x-lg"></i> Cancelar</button>
+                        </div>
+                        <div class="d-flex">
+                            <button type="submit" class="outnone btn login-btn"><i class="pr-2 bi bi-key"></i> Recuperar
+                                contraseña</button>
+                        </div>
+                        </form>
                     </div>
-                    <div class="d-flex">
-                        <button type="submit" class="outnone btn login-btn"><i class="pr-2 bi bi-key"></i> Recuperar
-                            contraseña</button>
-                    </div>
-                    </form>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- fin modal -->
+        <!-- fin modal -->
+
+        <!-- Modal -->
+        <div class="modal fade" id="subscribe" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"><i class="pr-2 bi bi-box-arrow-in-up-right"></i>
+                            Subscribirme</h5>
+                        <!-- <button type="button" class="outnone btn-close" data-bs-dismiss="modal" aria-label="Close"><i
+                      class="bi bi-x-lg"></i></button> -->
+                        <button type="button" class="outnone btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form action="#" method="post">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p class="card-text">Si te quieres enterar de mis ultimos proyectos y novedades,
+                                            te puedes subscribir a mi boletin de noticias</p>
+                                        <label for="email"><i class="bi bi-at"></i> Correo Electronico:</label>
+                                        <input type="email" name="email" class="form-login outnone form-control"
+                                            placeholder="Ingrese su email ej: fperez@gmail.com"
+                                            autocomplete="ÑaoC0mplete">
+                                    </div>
+
+                                </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="d-flex me-auto">
+                            <button type="button" class="mr-auto outnone btn btn-secondary" data-bs-dismiss="modal"><i
+                                    class="pr-2  bi bi-x-lg"></i> Cancelar</button>
+                        </div>
+                        <div class="d-flex">
+                            <button type="submit" class="outnone btn login-btn"><i
+                                    class="pr-2 bi bi-box-arrow-in-up-right"></i> Subscribirme</button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- fin modal -->
+    </section>
 
     <!-- acerca de -->
     <section id="acerca-de">
@@ -619,7 +669,7 @@
                         <a href="./contactame.html" class="footer-enlace-a">Contactame</a>
                         <a class="footer-enlace-a" data-bs-toggle="modal" data-bs-target="#login">Iniciar
                             Sesion</a>
-                        <a href="" class="footer-enlace-a">Subscribete</a>
+                        <a class="footer-enlace-a"  data-bs-toggle="modal" data-bs-target="#subscribe">Subscribete</a>
                     </div>
                 </div>
                 <div class="col-md-3">

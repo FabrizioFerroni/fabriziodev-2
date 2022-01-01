@@ -90,7 +90,7 @@
                         <h5 class="modal-title" id="exampleModalLabel"><i class="pr-2 bi bi-person-bounding-box"></i>
                             Iniciar Sesión</h5>
                         <!-- <button type="button" class="outnone btn-close" data-bs-dismiss="modal" aria-label="Close"><i
-                        class="bi bi-x-lg"></i></button> -->
+                    class="bi bi-x-lg"></i></button> -->
                         <button type="button" class="outnone btn-close btn-close-white" data-bs-dismiss="modal"
                             aria-label="Close"></button>
                     </div>
@@ -99,7 +99,7 @@
                             <form action="#" method="post">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <label for="user"><i class="bi bi-person"></i> Usuario:</label>
+                                        <label for="user"><i class="bi bi-person-circle"></i> Usuario:</label>
                                         <input type="text" name="user" class="form-login outnone form-control"
                                             placeholder="Ingrese su usuario. ej: fperez" autocomplete="ÑaoC0mplete">
                                     </div>
@@ -157,7 +157,7 @@
                         <h5 class="modal-title" id="exampleModalLabel"><i class="pr-2 bi bi-person-plus"></i>
                             Registrarse</h5>
                         <!-- <button type="button" class="outnone btn-close" data-bs-dismiss="modal" aria-label="Close"><i
-                        class="bi bi-x-lg"></i></button> -->
+                    class="bi bi-x-lg"></i></button> -->
                         <button type="button" class="outnone btn-close btn-close-white" data-bs-dismiss="modal"
                             aria-label="Close"></button>
                     </div>
@@ -176,13 +176,13 @@
                                             placeholder="Ingrese su apellido. ej: Perez" autocomplete="ÑaoC0mplete">
                                     </div>
                                     <div class="mt-4 col-md-12">
-                                        <label for="email"><i class="bi bi-person"></i> Correo Electronico:</label>
+                                        <label for="email"><i class="bi bi-at"></i> Correo Electronico:</label>
                                         <input type="email" name="email" class="form-login outnone form-control"
                                             placeholder="Ingrese su email. ej: fperez@gmail.com"
                                             autocomplete="ÑaoC0mplete">
                                     </div>
                                     <div class="mt-4 col-md-12">
-                                        <label for="user"><i class="bi bi-person"></i> Usuario:</label>
+                                        <label for="user"><i class="bi bi-person-circle"></i> Usuario:</label>
                                         <input type="text" name="user" class="form-login outnone form-control"
                                             placeholder="Ingrese su usuario. ej: fperez" autocomplete="ÑaoC0mplete">
                                     </div>
@@ -244,7 +244,7 @@
                         <h5 class="modal-title" id="exampleModalLabel"><i class="pr-2 bi bi-exclamation-circle"></i>
                             Olvide mi contraseña</h5>
                         <!-- <button type="button" class="outnone btn-close" data-bs-dismiss="modal" aria-label="Close"><i
-                        class="bi bi-x-lg"></i></button> -->
+                    class="bi bi-x-lg"></i></button> -->
                         <button type="button" class="outnone btn-close btn-close-white" data-bs-dismiss="modal"
                             aria-label="Close"></button>
                     </div>
@@ -253,7 +253,7 @@
                             <form action="#" method="post">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <label for="email"><i class="bi bi-person"></i> Correo Electronico:</label>
+                                        <label for="email"><i class="bi bi-at"></i> Correo Electronico:</label>
                                         <input type="email" name="email" class="form-login outnone form-control"
                                             placeholder="Ingrese su email con cual se registro. ej: fperez@gmail.com"
                                             autocomplete="ÑaoC0mplete">
@@ -283,8 +283,52 @@
             </div>
         </div>
         <!-- fin modal -->
-    </section>
 
+        <!-- Modal -->
+        <div class="modal fade" id="subscribe" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"><i class="pr-2 bi bi-box-arrow-in-up-right"></i>
+                            Subscribirme</h5>
+                        <!-- <button type="button" class="outnone btn-close" data-bs-dismiss="modal" aria-label="Close"><i
+                  class="bi bi-x-lg"></i></button> -->
+                        <button type="button" class="outnone btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form action="#" method="post">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p class="card-text">Si te quieres enterar de mis ultimos proyectos y novedades,
+                                            te puedes subscribir a mi boletin de noticias</p>
+                                        <label for="email"><i class="bi bi-at"></i> Correo Electronico:</label>
+                                        <input type="email" name="email" class="form-login outnone form-control"
+                                            placeholder="Ingrese su email ej: fperez@gmail.com"
+                                            autocomplete="ÑaoC0mplete">
+                                    </div>
+
+                                </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="d-flex me-auto">
+                            <button type="button" class="mr-auto outnone btn btn-secondary" data-bs-dismiss="modal"><i
+                                    class="pr-2  bi bi-x-lg"></i> Cancelar</button>
+                        </div>
+                        <div class="d-flex">
+                            <button type="submit" class="outnone btn login-btn"><i
+                                    class="pr-2 bi bi-box-arrow-in-up-right"></i> Subscribirme</button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- fin modal -->
+    </section>
 
     <!-- Proyectos -->
     <section id="proyectos">
@@ -299,7 +343,8 @@
                             <img src="assets/img/proyectos.png" class="card-img-top proyectos-img-card" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title float-start text-primary-custom">Guía de estilos</h5>
-                                <p class="card-text"><small class="text-muted act-proyectos float-end">Última actualización hace 3
+                                <p class="card-text"><small class="text-muted act-proyectos float-end">Última
+                                        actualización hace 3
                                         minutos</small></p>
                                 <p class="card-text pt-20">La iglesia “Funte de poder” desarrollaba sus actividades de
                                     manera presencial en su lugar de reunión habitual, pero con la situación actual que
@@ -308,7 +353,8 @@
                                     hacer donaciones a la iglesia para su proyecto de reconstrucción y conocer los
                                     detalles del mismo.
                                 </p>
-                                <a href="./proyectos/guia-de-estilos.html" class="outnone btn btn-primary btn-viewmore">Leer Más</a>
+                                <a href="./proyectos/guia-de-estilos.html"
+                                    class="outnone btn btn-primary btn-viewmore">Leer Más</a>
                             </div>
                         </div>
 
@@ -316,7 +362,8 @@
                             <img src="assets/img/proyectos.png" class="card-img-top proyectos-img-card" alt="...">
                             <div class="card-body">
                                 <h5 class="card-title float-start text-primary-custom">Guía de estilos</h5>
-                                <p class="card-text"><small class="text-muted act-proyectos float-end">Última actualización hace 3
+                                <p class="card-text"><small class="text-muted act-proyectos float-end">Última
+                                        actualización hace 3
                                         minutos</small></p>
                                 <p class="card-text pt-20">La iglesia “Funte de poder” desarrollaba sus actividades de
                                     manera presencial en su lugar de reunión habitual, pero con la situación actual que
@@ -325,7 +372,8 @@
                                     hacer donaciones a la iglesia para su proyecto de reconstrucción y conocer los
                                     detalles del mismo.
                                 </p>
-                                <a href="./proyectos/guia-de-estilos.html" class=" btn btn-primary  outnone btn-viewmore">Leer Más</a>
+                                <a href="./proyectos/guia-de-estilos.html"
+                                    class=" btn btn-primary  outnone btn-viewmore">Leer Más</a>
                             </div>
                         </div>
                     </div>
@@ -355,7 +403,8 @@
                         <a href="./contactame.html" class="footer-enlace-a">Contactame</a>
                         <a href="" class="footer-enlace-a" data-bs-toggle="modal" data-bs-target="#login">Iniciar
                             Sesion</a>
-                        <a href="" class="footer-enlace-a">Subscribete</a>
+                        <a href="" class="footer-enlace-a" data-bs-target="#subscribe"
+                            data-bs-toggle="modal">Subscribete</a>
                     </div>
                 </div>
                 <div class="col-md-3">

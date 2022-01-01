@@ -48,12 +48,12 @@
                     </li>
 
                     <li class="nav-item px-2">
-                        <a class="nav-link " href="./proyectos.html" tabindex="-1"
-                            aria-disabled="true">Proyectos</a>
+                        <a class="nav-link " href="./proyectos.html" tabindex="-1" aria-disabled="true">Proyectos</a>
                     </li>
 
                     <li class="nav-item px-2">
-                        <a class="nav-link active" href="./contactame.html" tabindex="-1" aria-disabled="true">Contactame</a>
+                        <a class="nav-link active" href="./contactame.html" tabindex="-1"
+                            aria-disabled="true">Contactame</a>
                     </li>
 
                     <li class="nav-item px-2">
@@ -99,7 +99,7 @@
                             <form action="#" method="post">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <label for="user"><i class="bi bi-person"></i> Usuario:</label>
+                                        <label for="user"><i class="bi bi-person-circle"></i> Usuario:</label>
                                         <input type="text" name="user" class="form-login outnone form-control"
                                             placeholder="Ingrese su usuario. ej: fperez" autocomplete="ÑaoC0mplete">
                                     </div>
@@ -176,13 +176,13 @@
                                             placeholder="Ingrese su apellido. ej: Perez" autocomplete="ÑaoC0mplete">
                                     </div>
                                     <div class="mt-4 col-md-12">
-                                        <label for="email"><i class="bi bi-person"></i> Correo Electronico:</label>
+                                        <label for="email"><i class="bi bi-at"></i> Correo Electronico:</label>
                                         <input type="email" name="email" class="form-login outnone form-control"
                                             placeholder="Ingrese su email. ej: fperez@gmail.com"
                                             autocomplete="ÑaoC0mplete">
                                     </div>
                                     <div class="mt-4 col-md-12">
-                                        <label for="user"><i class="bi bi-person"></i> Usuario:</label>
+                                        <label for="user"><i class="bi bi-person-circle"></i> Usuario:</label>
                                         <input type="text" name="user" class="form-login outnone form-control"
                                             placeholder="Ingrese su usuario. ej: fperez" autocomplete="ÑaoC0mplete">
                                     </div>
@@ -253,7 +253,7 @@
                             <form action="#" method="post">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <label for="email"><i class="bi bi-person"></i> Correo Electronico:</label>
+                                        <label for="email"><i class="bi bi-at"></i> Correo Electronico:</label>
                                         <input type="email" name="email" class="form-login outnone form-control"
                                             placeholder="Ingrese su email con cual se registro. ej: fperez@gmail.com"
                                             autocomplete="ÑaoC0mplete">
@@ -283,34 +283,83 @@
             </div>
         </div>
         <!-- fin modal -->
-    </section>
 
-<section id="contactame">
-    <div class="container contact">
-        <div class="contact-header">
-            <p class="p-title-contact">¡Hablemos!</p>
-            <p class="p-subtitle-contact">Si estás interesado en mi trabajo o tienes alguna inquietud, no dudes en escribirme!</p>
-            <div class="row">
-                <div class="col-md-12">
-                    <div class="card card-contact">
-                        <form action="#" method="post">
-                            <label for="name" class="label-contact">Tu nombre</label>
-                            <input type="text" name="name" class="form-control input-contact outnone" placeholder="Nombre">
+        <!-- Modal -->
+        <div class="modal fade" id="subscribe" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"><i class="pr-2 bi bi-box-arrow-in-up-right"></i>
+                            Subscribirme</h5>
+                        <!-- <button type="button" class="outnone btn-close" data-bs-dismiss="modal" aria-label="Close"><i
+                      class="bi bi-x-lg"></i></button> -->
+                        <button type="button" class="outnone btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form action="#" method="post">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p class="card-text">Si te quieres enterar de mis ultimos proyectos y novedades,
+                                            te puedes subscribir a mi boletin de noticias</p>
+                                        <label for="email"><i class="bi bi-at"></i> Correo Electronico:</label>
+                                        <input type="email" name="email" class="form-login outnone form-control"
+                                            placeholder="Ingrese su email ej: fperez@gmail.com"
+                                            autocomplete="ÑaoC0mplete">
+                                    </div>
 
-                            <label for="email" class="label-contact">Tu correo electrónico</label>
-                            <input type="email" name="email" class="form-control input-contact outnone" placeholder="ejemplo@hotmail.com">
-
-                            <label for="msj" class="label-contact">Tu mensaje</label>
-                            <textarea name="msj" class="form-control text-contact outnone" cols="30" rows="10" placeholder="Hola..."></textarea>
-
-                            <button type="submit" class="button-contact">Enviar</button>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="d-flex me-auto">
+                            <button type="button" class="mr-auto outnone btn btn-secondary" data-bs-dismiss="modal"><i
+                                    class="pr-2  bi bi-x-lg"></i> Cancelar</button>
+                        </div>
+                        <div class="d-flex">
+                            <button type="submit" class="outnone btn login-btn"><i
+                                    class="pr-2 bi bi-box-arrow-in-up-right"></i> Subscribirme</button>
+                        </div>
                         </form>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+        <!-- fin modal -->
+    </section>
+
+    <section id="contactame">
+        <div class="container contact">
+            <div class="contact-header">
+                <p class="p-title-contact">¡Hablemos!</p>
+                <p class="p-subtitle-contact">Si estás interesado en mi trabajo o tienes alguna inquietud, no dudes en
+                    escribirme!</p>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card card-contact">
+                            <form action="#" method="post">
+                                <label for="name" class="label-contact">Tu nombre</label>
+                                <input type="text" name="name" class="form-control input-contact outnone"
+                                    placeholder="Nombre">
+
+                                <label for="email" class="label-contact">Tu correo electrónico</label>
+                                <input type="email" name="email" class="form-control input-contact outnone"
+                                    placeholder="ejemplo@hotmail.com">
+
+                                <label for="msj" class="label-contact">Tu mensaje</label>
+                                <textarea name="msj" class="form-control text-contact outnone" cols="30" rows="10"
+                                    placeholder="Hola..."></textarea>
+
+                                <button type="submit" class="button-contact">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -332,9 +381,9 @@
                 <div class="col-md-3">
                     <div class="footer-enlace">
                         <a href="./contactame.html" class="footer-enlace-a active">Contactame</a>
-                        <a href="" class="footer-enlace-a" data-bs-toggle="modal" data-bs-target="#login">Iniciar
+                        <a class="footer-enlace-a" data-bs-toggle="modal" data-bs-target="#login">Iniciar
                             Sesion</a>
-                        <a href="" class="footer-enlace-a">Subscribete</a>
+                        <a class="footer-enlace-a" data-bs-toggle="modal" data-bs-target="#subscribe">Subscribete</a>
                     </div>
                 </div>
                 <div class="col-md-3">

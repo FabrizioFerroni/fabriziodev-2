@@ -6,7 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Fabrizio Ferroni">
-    <meta name="description" content="Portfolio basado en HTML, CSS Y Javascript. Esta escrito en código HTML y CSS3 válido y limpio">
+    <meta name="description"
+        content="Portfolio basado en HTML, CSS Y Javascript. Esta escrito en código HTML y CSS3 válido y limpio">
     <meta name="keywords" content="portfolio website, portfolio html">
     <title>Fabrizio Ferroni - Developer</title>
     <link rel="shortcut icon" href="assets/img/faviconff.ico" type="image/x-icon">
@@ -93,7 +94,11 @@
                 <!-- <a href="docs/CVFabrizioFerroni-2022.pdf" download="CV-Fabrizio-Ferroni.pdf" class="outnone download-btn btn"><i class="bi bi-download"></i> Descargar mi CV</a> -->
             </div>
         </div>
+    </section>
+    <!-- fin header -->
 
+    <!-- modal -->
+    <section id="modal">
         <!-- Modal -->
         <div class="modal fade" id="login" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -102,16 +107,17 @@
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel"><i class="pr-2 bi bi-person-bounding-box"></i>
                             Iniciar Sesión</h5>
-                        <button type="button" class="outnone btn-close" data-bs-dismiss="modal" aria-label="Close"><i
-                                class="bi bi-x-lg"></i></button>
-                        <!-- <button type="button" class="outnone btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                        <!-- <button type="button" class="outnone btn-close" data-bs-dismiss="modal" aria-label="Close"><i
+                        class="bi bi-x-lg"></i></button> -->
+                        <button type="button" class="outnone btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <div class="container-fluid">
                             <form action="#" method="post">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <label for="user"><i class="bi bi-person"></i> Usuario:</label>
+                                        <label for="user"><i class="bi bi-person-circle"></i> Usuario:</label>
                                         <input type="text" name="user" class="form-login outnone form-control"
                                             placeholder="Ingrese su usuario. ej: fperez" autocomplete="ÑaoC0mplete">
                                     </div>
@@ -168,9 +174,10 @@
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel"><i class="pr-2 bi bi-person-plus"></i>
                             Registrarse</h5>
-                        <button type="button" class="outnone btn-close" data-bs-dismiss="modal" aria-label="Close"><i
-                                class="bi bi-x-lg"></i></button>
-                        <!-- <button type="button" class="outnone btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                        <!-- <button type="button" class="outnone btn-close" data-bs-dismiss="modal" aria-label="Close"><i
+                        class="bi bi-x-lg"></i></button> -->
+                        <button type="button" class="outnone btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <div class="container-fluid">
@@ -187,13 +194,13 @@
                                             placeholder="Ingrese su apellido. ej: Perez" autocomplete="ÑaoC0mplete">
                                     </div>
                                     <div class="mt-4 col-md-12">
-                                        <label for="email"><i class="bi bi-person"></i> Correo Electronico:</label>
+                                        <label for="email"><i class="bi bi-at"></i> Correo Electronico:</label>
                                         <input type="email" name="email" class="form-login outnone form-control"
                                             placeholder="Ingrese su email. ej: fperez@gmail.com"
                                             autocomplete="ÑaoC0mplete">
                                     </div>
                                     <div class="mt-4 col-md-12">
-                                        <label for="user"><i class="bi bi-person"></i> Usuario:</label>
+                                        <label for="user"><i class="bi bi-person-circle"></i> Usuario:</label>
                                         <input type="text" name="user" class="form-login outnone form-control"
                                             placeholder="Ingrese su usuario. ej: fperez" autocomplete="ÑaoC0mplete">
                                     </div>
@@ -254,16 +261,17 @@
                     <div class="modal-header">
                         <h5 class="modal-title" id="exampleModalLabel"><i class="pr-2 bi bi-exclamation-circle"></i>
                             Olvide mi contraseña</h5>
-                        <button type="button" class="outnone btn-close" data-bs-dismiss="modal" aria-label="Close"><i
-                                class="bi bi-x-lg"></i></button>
-                        <!-- <button type="button" class="outnone btn-close" data-bs-dismiss="modal" aria-label="Close"></button> -->
+                        <!-- <button type="button" class="outnone btn-close" data-bs-dismiss="modal" aria-label="Close"><i
+                        class="bi bi-x-lg"></i></button> -->
+                        <button type="button" class="outnone btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
                         <div class="container-fluid">
                             <form action="#" method="post">
                                 <div class="row">
                                     <div class="col-md-12">
-                                        <label for="email"><i class="bi bi-person"></i> Correo Electronico:</label>
+                                        <label for="email"><i class="bi bi-at"></i> Correo Electronico:</label>
                                         <input type="email" name="email" class="form-login outnone form-control"
                                             placeholder="Ingrese su email con cual se registro. ej: fperez@gmail.com"
                                             autocomplete="ÑaoC0mplete">
@@ -292,9 +300,54 @@
                 </div>
             </div>
         </div>
+        <!-- fin modal -->
 
+        <!-- Modal -->
+        <div class="modal fade" id="subscribe" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered ">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel"><i class="pr-2 bi bi-box-arrow-in-up-right"></i>
+                            Subscribirme</h5>
+                        <!-- <button type="button" class="outnone btn-close" data-bs-dismiss="modal" aria-label="Close"><i
+                      class="bi bi-x-lg"></i></button> -->
+                        <button type="button" class="outnone btn-close btn-close-white" data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container-fluid">
+                            <form action="#" method="post">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <p class="card-text">Si te quieres enterar de mis ultimos proyectos y novedades,
+                                            te puedes subscribir a mi boletin de noticias</p>
+                                        <label for="email"><i class="bi bi-at"></i> Correo Electronico:</label>
+                                        <input type="email" name="email" class="form-login outnone form-control"
+                                            placeholder="Ingrese su email ej: fperez@gmail.com"
+                                            autocomplete="ÑaoC0mplete">
+                                    </div>
+
+                                </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div class="d-flex me-auto">
+                            <button type="button" class="mr-auto outnone btn btn-secondary" data-bs-dismiss="modal"><i
+                                    class="pr-2  bi bi-x-lg"></i> Cancelar</button>
+                        </div>
+                        <div class="d-flex">
+                            <button type="submit" class="outnone btn login-btn"><i
+                                    class="pr-2 bi bi-box-arrow-in-up-right"></i> Subscribirme</button>
+                        </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- fin modal -->
     </section>
-    <!-- fin header -->
+
 
     <!-- acerca de -->
     <section id="acerca-de">
@@ -342,15 +395,15 @@
                 <p class="proyectos-title">Proyectos</p>
             </div>
             <div class="proyectos-body">
-                        <img src="assets/img/proyectos.png" alt="proyectos ff dev" class="proyectos-img">
-                        <img src="assets/img/proyectos.png" alt="proyectos ff dev" class="proyectos-img">
-                        <img src="assets/img/proyectos.png" alt="proyectos ff dev" class="proyectos-img">
-                        <img src="assets/img/proyectos.png" alt="proyectos ff dev" class="proyectos-img">
-                </div>
-                <a href="https://github.com/FabrizioFerroni" target="_blank" class="outnone btn github-btn">
-                    Ver mas en github 
-                    <i class="pl-2 bi bi-arrow-right"></i>
-                </a>
+                <img src="assets/img/proyectos.png" alt="proyectos ff dev" class="proyectos-img">
+                <img src="assets/img/proyectos.png" alt="proyectos ff dev" class="proyectos-img">
+                <img src="assets/img/proyectos.png" alt="proyectos ff dev" class="proyectos-img">
+                <img src="assets/img/proyectos.png" alt="proyectos ff dev" class="proyectos-img">
+            </div>
+            <a href="https://github.com/FabrizioFerroni" target="_blank" class="outnone btn github-btn">
+                Ver mas en github
+                <i class="pl-2 bi bi-arrow-right"></i>
+            </a>
         </div>
     </section>
     <!-- fin proyectos -->
@@ -358,32 +411,34 @@
     <!-- footer -->
     <footer>
         <div class="footers container">
-           <div class="row">
-               <div class="col-md-3">
+            <div class="row">
+                <div class="col-md-3">
                     <p class="footer-title">Fabrizio DEV</p>
-               </div>
-               <div class="col-md-3">
+                </div>
+                <div class="col-md-3">
 
-                <div class="footer-enlace">
-                    <a href="./" class="footer-enlace-a active">Inicio</a>
-                    <a href="./acerca-de-mi.html" class="footer-enlace-a">Acerca de mi</a>
-                    <a href="./proyectos.html" class="footer-enlace-a">Proyectos</a>
+                    <div class="footer-enlace">
+                        <a href="./" class="footer-enlace-a active">Inicio</a>
+                        <a href="./acerca-de-mi.html" class="footer-enlace-a">Acerca de mi</a>
+                        <a href="./proyectos.html" class="footer-enlace-a">Proyectos</a>
+                    </div>
                 </div>
-               </div>
-               <div class="col-md-3">
-                <div class="footer-enlace">
-                    <a href="./contactame.html" class="footer-enlace-a">Contactame</a>
-                    <a  class="footer-enlace-a" data-bs-toggle="modal" data-bs-target="#login">Iniciar Sesion</a>
-                    <a href="" class="footer-enlace-a">Subscribete</a>
+                <div class="col-md-3">
+                    <div class="footer-enlace">
+                        <a href="./contactame.html" class="footer-enlace-a">Contactame</a>
+                        <a class="footer-enlace-a" data-bs-toggle="modal" data-bs-target="#login">Iniciar Sesion</a>
+                        <a href="" class="footer-enlace-a" data-bs-toggle="modal"
+                            data-bs-target="#subscribe">Subscribete</a>
+                    </div>
                 </div>
-               </div>
-               <div class="col-md-3">
+                <div class="col-md-3">
                     <p class="footer-social">Social</p>
-                        <a href="https://github.com/FabrizioFerroni" target="_blank"><img src="assets/img/git_1.png" alt="" class="footer-img"></a>
-                        <a href="" target="_blank"><img src="assets/img/insta2_1.png" alt="" class="footer-img-2"></a>
-                        <a href="" target="_blank"><img src="assets/img/linkedin.png" alt="" class="footer-img"></a>
-               </div>
-           </div>
+                    <a href="https://github.com/FabrizioFerroni" target="_blank"><img src="assets/img/git_1.png" alt=""
+                            class="footer-img"></a>
+                    <a href="" target="_blank"><img src="assets/img/insta2_1.png" alt="" class="footer-img-2"></a>
+                    <a href="" target="_blank"><img src="assets/img/linkedin.png" alt="" class="footer-img"></a>
+                </div>
+            </div>
         </div>
         <div class="footer-copy">
             <p class="footer-copy-p">© 2021 Fabrizio DEV</p>
@@ -402,8 +457,3 @@
 </body>
 
 </html>
-
-
-
-
-
